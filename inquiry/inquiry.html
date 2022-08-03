@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLT Limited</title>
+
+<link rel="stylesheet" href="css/inquiry.css">
+
+</head>
+
+
+<body>
+<div id="page"> 
+	<header id="top">
+    <div id="logo">
+	<div id="img_inner">
+		<a href="../top.html"><img src="img/Logo.png"  id="offset"></a>
+		<a href="../top.html"><img src="img/FLT Inder.jpg" id="flt"></a>
+	
+    
+
+	<div class="block reveal">
+	<div class="gonav reveal-inner">
+		<ul id="nav">
+			<li><a href="../About/about.html" class="nav-a">About FLT</a></li>
+			<li><div class="dropdown"><a href="../service/service-FLEX.html" class="nav-a">Our Service</a>
+					  <div class="dropdown-content">
+					<a href="../service/IT/flexbox/IT serviceFLEX.html" class="nav-a item">IT</a>
+					<a href="../secretary/secretary.html" class="nav-a item">Secretary</a>
+					<a href="../service/cleaning/pika.html" class="nav-a item">Cleaning</a>
+					<a href="../service/CS/CS.html" class="nav-a item">CS</a>
+					  </div>
+				</div class="dropdown">
+			</li>
+			<li><a href="../careers/career.html" class="nav-a">Careers</a></li>
+			<li><a href="./inquiry.html" class="nav-a">Inquiry</a></li>
+			<li><a href="https://ordinary-shoe-6614.glideapp.io/" class="nav-a">GoMi App</a></li>
+			</ul>
+        </div>
+    </div>
+</div id="img_inner">
+    
+    <div class="dropdownT">
+            <button onclick = "myFunction()" id="myBtn" class="dropbtnT">Japanese</button>
+            <div id="myDropdown" class="dropdown-contentT">
+              <a href="">English</a>
+            </div>
+        </div>
+    
+    
+        </div id="logo">
+
+	</header id="top">
+
+		<div id="body">
+			<div class="parallax">
+			<div class="transp-box">
+			<div class="transp-box_inner">
+				<p id="contact">CONTACT US</p>
+				<p id="address">
+					22 Effectual Building, 16 Hennessy Rd,<br>
+					Wan Chai, HongKong 
+				</p>
+			
+				<p id="whatsapp">
+					contact@flt-limited.com<br>
+					Whatsapp → <a href="https://wa.me/message/KFPCMUEHRXUTG1" target="_blank">https://wa.me/message/KFPCMUEHRXUTG1</a>
+				</p>
+				<p id="get-back">
+					If you have any enquiries , please kindly contact us and fill in the form below.<br>
+					You can also reach us by the email or Whatsapp shown as above.<br>
+					We will get back to you with whatever you write to us, so please feel free to give it a write.<br>
+				</p>
+			</div>
+			</div class="transp-box">
+			
+
+			<div class="form">
+				<div class="form_inner">
+				
+					<p id="form">&nbsp;Inquiry Form&nbsp;</p>
+					<input type="text" id="name" name="name" placeholder="Name">
+					<input type="email" id="email" name="email" placeholder="Email">
+					<textarea id="inquiry" name="inquiry" rows="5" cols="60" placeholder="Whatever you want to let us know!"></textarea>
+					<input type="submit" value="SEND" id="send">
+				</div>
+			</div>
+		</div class="parallax">
+		</div id="body">
+
+
+<footer id="footer">
+<p id=copyright>
+<small>©2016-2022 by FLT Limited</small>
+</p id=copyright>
+</footer id="footer">
+
+</div id="page">
+
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+/*document.getElementById("myBtn").onclick = function() {myFunction()};*/
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdown").style.borderRadius="0px 0px 10px 10px";
+  document.getElementById("myBtn").style.borderRadius="10px 10px 0px 0px";
+
+  var x = document.getElementById("myDropdown");
+  var b = document.getElementById("myBtn"); 
+  if (x.style.display === "block") {
+    x.style.display = "none";
+	b.style.borderRadius="10px 10px 10px 10px";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+</body>
+</html>
+
+
