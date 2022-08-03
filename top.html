@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLT Limited</title>
+
+<link rel="stylesheet" href="css/home.css">
+
+</head>
+
+
+<body>
+<div id="page"> 
+	<header id="top">
+    <div id="logo">
+	<div id="img_inner">
+		<a href="./top.html"><img src="img/Logo.png"  id="offset"></a>
+		<a href="./top.html"><img src="img/FLT Inder.jpg" id="flt"></a>
+	
+    
+
+	<div class="block reveal">
+	<div class="gonav reveal-inner">
+		<ul id="nav">
+			<li><a href="./About/about.html" class="nav-a">About FLT</a></li>
+			<li><div class="dropdown"><a href="./service/service-FLEX.html" class="nav-a">Our Service</a>
+					  <div class="dropdown-content">
+					<a href="./service/IT/flexbox/IT serviceFLEX.html" class="nav-a item">IT</a>
+					<a href="./service/secretary/secretary.html" class="nav-a item">Secretary</a>
+					<a href="./service/cleaning/pika.html" class="nav-a item">Cleaning</a>
+					<a href="./service/CS/CS.html" class="nav-a item">CS</a>
+					  </div>
+				</div class="dropdown">
+			</li>
+			<li><a href="./careers/career.html" class="nav-a">Careers</a></li>
+			<li><a href="./inquiry/inquiry.html" class="nav-a">Inquiry</a></li>
+			<li><a href="https://ordinary-shoe-6614.glideapp.io/" class="nav-a">GoMi App</a></li>
+			</ul>
+        </div>
+    </div>
+</div id="img_inner">
+    
+    <div class="dropdownT">
+            <button onclick = "myFunction()" id="myBtn" class="dropbtnT">Japanese</button>
+            <div id="myDropdown" class="dropdown-contentT">
+              <a href="">English</a>
+            </div>
+        </div>
+    
+    
+        </div id="logo">
+
+	</header id="top">
+
+	
+	
+	<div id="body">	
+		<div id="bg"></div id="bg">
+	
+	<div id="for-no-hiding">
+	<p id="title">With our most sincerity</p>
+	
+	<div id="p1">
+	<p>To expand the business, it takes cost and time. 
+		It's also has a risk. If you are focusing on your business and no time to handle your office work and customer support, 
+		it's the right time for you to consider FLT for assistance !<br><br>
+		FLT can provide different services by our Japanese customer support team. We aim to improve customer satisfaction based on the customer's point of view. With the use of the existing skills and experiences of FLT, we can assist you to further expand and develop your business.
+		<br><br>
+		FLT will work as one to support your hopes.</p>
+	</div id="p1">
+	</div>
+	
+	</div id="body">
+
+	  
+
+
+<footer id="footer">
+<p id=copyright>
+<small>©2016-2022 by FLT Limited</small>
+</p id=copyright>
+</footer id="footer">
+
+</div id="page">
+
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+/*document.getElementById("myBtn").onclick = function() {myFunction()};*/
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdown").style.borderRadius="0px 0px 10px 10px";
+  document.getElementById("myBtn").style.borderRadius="10px 10px 0px 0px";
+
+  var x = document.getElementById("myDropdown");
+  var b = document.getElementById("myBtn"); 
+  if (x.style.display === "block") {
+    x.style.display = "none";
+	b.style.borderRadius="10px 10px 10px 10px";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+

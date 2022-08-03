@@ -1,0 +1,306 @@
+/** {
+  background-color: #FEF9EE;
+}*/
+
+#page {
+	background-color: #FEF9EE;
+  overflow: hidden;
+}
+
+#top {
+	width: 100%;
+	height: 30%;
+  display: inline-block;
+  position: relative;
+  
+}
+
+#offset {
+	position: absolute;
+	top: 3px;
+  left:-55px;
+  
+  display:inline-block;
+}
+
+#flt {
+  display:inline-block;
+}
+
+#img {
+	position: absolute;
+	left: 170px;
+}
+
+/*nav*/
+#nav li a:link, a:visited{
+  color:black;
+}
+
+#nav li a:hover{
+  color:darksalmon;
+}
+
+#nav li a{
+	overflow: visible;
+	text-align: left;
+	list-style: none;
+  text-decoration: none;
+  
+}
+
+ul li {
+  text-decoration: none;
+	font-size: 16px;
+	font-family: メイリオ;
+	display: inline-block;
+	text-align: left;
+	line-height: 30px;
+	padding: 0px 10px;
+	transition: #FF4040 .4s ease 0s;
+  
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff9ee;
+  width: auto;
+  z-index: 99;
+  overflow: visible !important;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #fff9ee;
+	color: #FF4040;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover {background-color: #fff9ee;}
+
+
+/* Nav anime*/
+.gonav {
+  position: relative;
+    overflow: visible;
+    display: block;
+    line-height: 2.5;
+    left:70px;
+    top:65px;
+}
+
+.gonav::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FEF9EE;
+    animation: a-ltr-after 2s linear forwards;
+    transform: translateX(-101%);
+}
+
+.gonav::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FEF9EE;
+    animation: a-ltr-before 2s linear forwards;
+    transform: translateX(0);
+}
+/*@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}*/
+@keyframes a-ltr-after{
+  0% {transform: translateX(0)}
+  100% {transform: translateX(100%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(100%)}
+}
+
+/*toggle button*/
+.dropbtnT {
+  background-color: #e9860e;
+  color: white;
+  padding: 13px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.dropbtnT:hover, .dropbtnT:focus {
+  background-color: darksalmon;
+}
+
+.dropdownT {
+  position: relative;
+  display: block;
+  float:right;
+  font-size:16px;
+  line-height: 23px;
+  z-index: 99;
+  right:150px;
+  top:-10px
+}
+
+.dropdown-contentT {
+  display: none;
+  position: absolute;
+  background-color: #e9860e;
+  width: 100%;
+  overflow: auto;
+  
+}
+
+.dropdown-contentT a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 99;
+}
+
+.dropdown-contentT a:hover {background-color: darksalmon}
+
+.show {
+  display:block;
+}
+
+#footer{
+  position:relative;
+  display:block;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff9ee;
+  bottom: 0px;
+  margin: 0 auto;
+}
+
+/*body*/
+.wrapper {
+  display: grid;
+  grid-template: 10% 45% 45%/25% 25% 25% 25%;
+  border:1px solid black;
+  /*height:834px;*/
+  height:auto;
+  width: 100%;
+}
+
+.box {
+  padding: 15px;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-family: "ms gothic", Arial, Helvetica, sans-serif;
+  font-weight:700;
+  border: 1px solid black;
+  text-align: left;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.a {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+.b {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+.c {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.d {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.e {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.f {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.bg{
+  background-image: url("../img/shutterstock_1334391230.jpg");
+  margin: 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+/*#bg {
+  background-image: url("img/steven-wei-5IV6_am62dg-unsplash.jpg");
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width:100%; 
+  height:680px; 
+  object-fit: cover;
+}*/
+
+
+/*#title {
+  font-size:80px;
+  font-family: "skip";
+  color: black;
+  z-index: 1;
+  position:absolute;
+  left:150px;
+}
+
+#p1 {
+  width:700px;
+  height:400px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  position:absolute;
+  left:150px;
+  top:250px;
+  animation: fadeInAnimation2 ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation2 {
+  0% {
+      opacity: 0;
+      top:200px;
+  }
+  100% {
+      opacity: 1;
+      top:250px;
+  }
+}*/
