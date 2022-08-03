@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+}
+
+#logo {
+  width: 100%;
+  height: 120px;
+  display: block;
+  background-color: #fff9ee;
+}
+
+#img_inner {
+  width: 65%;
+  height:100%;
+  display: inline-block;
+  margin: 0 15% 0 10%;
+  background-color: #fff9ee;
+}
+#offset {
+  width: 54px; 
+  height: 67px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+#flt {
+  width: 462px; 
+  height: 82px;  
+  display: inline-block;
+}
+/*nav*/
+#nav {
+  padding: 0px;
+}
+#nav li .nav-a:link, .nav-a:visited{
+  color:black;
+}
+
+#nav li .nav-a:hover{
+  color:darksalmon;
+}
+
+.gonav {
+  overflow: visible;
+  display: block;
+  width: auto;
+  height: 100%;
+  
+
+}
+
+#nav li {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  line-height: 20px;
+  padding: 0 10px;
+  list-style: none;
+}
+
+#nav li .nav-a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  overflow: visible;
+}
+
+/*our serivce content*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff9ee;
+  width: auto;
+  padding: 5px;
+  z-index: 99999;
+  overflow: visible !important;
+
+}
+
+.dropdown-content .item {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff9ee;
+  color: #FF4040;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover {background-color: #fff9ee;}
+
+/* Nav anime*/
+.block {
+  padding: .1em .4em;
+}
+.reveal {
+  position: relative;
+}
+.reveal-inner {
+  animation: lr-content 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.gonav::after{
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #FEF9EE;
+  animation: lr-bar 1s linear both;
+}
+@keyframes lr-bar {
+  0% { transform-origin: center left 0px; transform: scaleX(1); }
+  36% { transform: scaleX(1); transform-origin: center left 0px; }
+  54% { transform: scaleX(1); transform-origin: center right 0px; }
+  90% { transform: scaleX(0);  transform-origin: center right 0px; }
+  100% { transform: scaleX(0);  transform-origin: center right 0px; }
+}
+@keyframes lr-content {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+/*toggle button*/
+.dropbtnT {
+  background-color: #e9860e;
+  color: white;
+  padding: 13px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.dropbtnT:hover, .dropbtnT:focus {
+  background-color: darksalmon;
+}
+
+.dropdownT {
+  position: relative;
+  display: block;
+  float:right;
+  font-size:16px;
+  line-height: 23px;
+  z-index: 99;
+  right:150px;
+  top:70px;
+}
+
+.dropdown-contentT {
+  display: none;
+  position: absolute;
+  background-color: #e9860e;
+  width: 100%;
+  overflow: auto;
+  
+}
+
+.dropdown-contentT a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 99;
+}
+
+.dropdown-contentT a:hover {background-color: darksalmon}
+
+.show {
+  display:block;
+}
+
+
+
+#footer{
+  position:relative;
+  display:block;
+  text-align: center;
+  height: 100%;
+  line-height: 70px;
+  padding: 20px;
+  background-color: #fff9ee;
+  bottom: 0px;
+  margin: 0 auto;
+}
+#copyright {
+  color:#FF4040;
+}
+
+/*body*/
+.wrapper {
+  display: grid;
+  grid-template: 100%/5fr 7fr;
+  /*border:1px solid black;*/
+  /*height:auto;*/
+  height:auto;
+  width: 100%;
+}
+
+.box {
+  padding: 15px;
+  line-height: 1.2em;
+  /*border: 1px solid black;*/
+  text-align: left;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #FEF9EE;
+}
+.b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #F4C1B8;
+}
+
+.bg{
+  background-image: url("../img/project manager.png");
+  margin: 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.recruit {
+  font-size: 20px;
+  font-family: Helvetica, "ms gothic", Arial, sans-serif;
+  font-weight:700;
+  text-align: left;
+}
+.detail {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.point-form {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left:15px;
+}
+.private {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 0 0;
+  padding:0;
+  
+}
+.whatsapp {
+  margin: 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.whatsapp a {
+  color:black;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLT Limited</title>
+
+<link rel="stylesheet" href="css/about.css">
+
+</head>
+
+
+<body>
+<div id="page"> 
+	<header id="top">
+    <div id="logo">
+	<div id="img_inner">
+		<a href="../top.html"><img src="img/Logo.png"  id="offset"></a>
+		<a href="../top.html"><img src="img/FLT Inder.jpg" id="flt"></a>
+	
+    
+
+	<div class="block reveal">
+	<div class="gonav reveal-inner">
+		<ul id="nav">
+			<li><a href="./about.html" class="nav-a">About FLT</a></li>
+			<li><div class="dropdown"><a href="../service/service-FLEX.html" class="nav-a">Our Service</a>
+					  <div class="dropdown-content">
+					<a href="../service/IT/flexbox/IT serviceFLEX.html" class="nav-a item">IT</a>
+					<a href="../service/secretary/secretary.html" class="nav-a item">Secretary</a>
+					<a href="../service/cleaning/pika.html" class="nav-a item">Cleaning</a>
+					<a href="../service/CS/CS.html" class="nav-a item">CS</a>
+					  </div>
+				</div class="dropdown">
+			</li>
+			<li><a href="../careers/career.html" class="nav-a">Careers</a></li>
+			<li><a href="../inquiry/inquiry.html" class="nav-a">Inquiry</a></li>
+			<li><a href="https://ordinary-shoe-6614.glideapp.io/" class="nav-a">GoMi App</a></li>
+			</ul>
+        </div>
+    </div>
+</div id="img_inner">
+    
+    <div class="dropdownT">
+            <button onclick = "myFunction()" id="myBtn" class="dropbtnT">Japanese</button>
+            <div id="myDropdown" class="dropdown-contentT">
+              <a href="">English</a>
+            </div>
+        </div>
+    
+    
+        </div id="logo">
+
+	</header id="top">
+
+	</header id="top">
+
+	<div id="body">	
+		<div class="wrapper">
+		<div class="box bg a"></div>
+		<div class="box b">
+			<p>
+			<h1>Why we built FLT?</h1>
+			</p>
+		</div>
+		<div class="box c">
+			<p class="text">
+			Though it may seem to be strange, our representative had some fate with Japan. After returning from studying abroad in Japan, he felt that Japanese people living in Hong Kong met various problems, and then he established the business with the desire to solve all their problems. That is why FLT is here today.
+			<br><br>We provide comprehensive support for Japanese people living in Hong Kong (Japanese is available). We aim to support our customers with the goal of making them live comfortably in Hong Kong and becoming fond of Hong Kong. In addition to online customer support, we also provide services as a business advisor such as starting a business in Hong Kong.
+			<br><br>We are here to support you all to make Hong Kong your second home!
+			</p>
+		</div>
+		<!--<div class="box d"></div>
+		<div class="box e"></div>
+		<div class="box f"></div>
+		<div class="box g"></div>
+		<div class="box h"></div>
+		<div class="box i"></div>
+		<div class="box j"></div>
+		<div class="box k"></div>
+		<div class="box l"></div>
+		</div>-->
+
+
+		
+
+	</div id="body">
+
+<footer id="footer">
+<p id=copyright>
+<small>©2016-2022 by FLT Limited</small>
+</p id=copyright>
+</footer id="footer">
+
+</div id="page">
+
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+/*document.getElementById("myBtn").onclick = function() {myFunction()};*/
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdown").style.borderRadius="0px 0px 10px 10px";
+  document.getElementById("myBtn").style.borderRadius="10px 10px 0px 0px";
+
+  var x = document.getElementById("myDropdown");
+  var b = document.getElementById("myBtn"); 
+  if (x.style.display === "block") {
+    x.style.display = "none";
+	b.style.borderRadius="10px 10px 10px 10px";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
